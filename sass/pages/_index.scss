@@ -1,0 +1,45 @@
+
+
+.contenedor-reglas{
+    display: flex;
+    flex-direction: column;
+    .reglas{
+        h5{
+            display: flex;
+            gap: .5rem;
+        }
+    }
+    
+}
+.reglas h5 {
+    min-height: 1.2em; /* Ajusta según el tamaño deseado */
+    display: flex;
+    align-items: center;
+}
+
+.reglas h5 span {
+    display: inline-block;
+    white-space: pre;
+}
+
+.reglas h5 span > span {
+    display: inline; /* Ajusta según el comportamiento deseado */
+}
+
+
+.span-regla-1,
+.span-regla-2,
+.span-regla-3,
+.span-regla-4 {
+    display: none;
+    @extend .extend-reglas-span
+}
+
+
+.show-animation {
+    animation: typing 5s steps(47), blink .5s infinite step-end alternate;
+    opacity: 1;
+}
+
+
+
