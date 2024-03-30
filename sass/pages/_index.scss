@@ -1,45 +1,69 @@
 
+.index-main{
+    background-color: black;
 
-.contenedor-reglas{
-    display: flex;
-    flex-direction: column;
-    .reglas{
-        h5{
-            display: flex;
-            gap: .5rem;
+    .index-reglas{
+        article{
+            background-color: $color-negro-terminal;
+
+            .reglas{
+                /* Añade las reglas de animación */
+                    @extend .extend-reglas-span;
+                    .regla-typing1 {
+                        animation: typing 3s steps(47) infinite, efectoBorde .5s step-end infinite alternate;
+                    }
+
+                    .regla-typing2 {
+                        animation: typing 3s steps(47) infinite, efectoBorde .5s step-end infinite alternate;
+                    }
+
+                    .regla-typing3 {
+                        animation: typing 2.5s steps(37) infinite, efectoBorde .5s step-end infinite alternate;
+                    }
+
+                    .regla-typing4 {
+                        animation: typing 2.5s steps(26) infinite, efectoBorde .5s step-end infinite alternate;
+
+                    }
+                }   
+                .etica{
+                    .etica-typing1{
+                        animation: typing 3s steps(54) infinite, efectoBorde .5s step-end infinite alternate;
+                    }
+                    .etica-typing2{
+                        animation: typing 3s steps(62) infinite, efectoBorde .5s step-end infinite alternate;
+                    }
+                    .etica-typing3{
+                        animation: typing 3s steps(51) infinite, efectoBorde .5s step-end infinite alternate;
+                    }
+                }
+            }
         }
-    }
-    
+
+        .div-franja-divisora{
+            height: 100px;
+            background-image: url(./../);
+            h2{
+                color: $color-verde-texto;
+            }
+        }
+
+        .nuestras-tecnologias{
+            background-color: rgba(6, 92, 6, 0.123) ;
+            .img-de-fondo{
+                background-image: url(./../../video/codigo-binario.mp);
+                @extend .background;
+                height: 700px;
+                div{
+                    height: 100%;
+                    @include blur($color-verde-blur, blur(5px));
+                     h3{
+                        color: rgb(62, 203, 19);
+                    }
+                    p{
+                        color: rgb(209, 207, 214);
+                    }
+                }
+            }
+        }
 }
-.reglas h5 {
-    min-height: 1.2em; /* Ajusta según el tamaño deseado */
-    display: flex;
-    align-items: center;
-}
-
-.reglas h5 span {
-    display: inline-block;
-    white-space: pre;
-}
-
-.reglas h5 span > span {
-    display: inline; /* Ajusta según el comportamiento deseado */
-}
-
-
-.span-regla-1,
-.span-regla-2,
-.span-regla-3,
-.span-regla-4 {
-    display: none;
-    @extend .extend-reglas-span
-}
-
-
-.show-animation {
-    animation: typing 5s steps(47), blink .5s infinite step-end alternate;
-    opacity: 1;
-}
-
-
-

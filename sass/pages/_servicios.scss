@@ -1,0 +1,15 @@
+
+.foto-background-servicios{
+    background-image: url(./../../img/hacker-img.jpg);
+    @extend .background;
+    width: 100%;
+    height: 30rem;
+    div{
+        @include blur($color-verde-blur, blur(3px));
+        height: 100%;
+        @include flex(center, wrap, center);
+        h1{
+            @extend .centrar-nivel-pro;
+        }
+    }
+}

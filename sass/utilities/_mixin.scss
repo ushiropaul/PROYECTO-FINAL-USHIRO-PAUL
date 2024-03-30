@@ -1,0 +1,25 @@
+
+
+@mixin blur($back-color, $back-filter){
+    background-color:$back-color;
+    backdrop-filter:$back-filter;
+}
+
+@mixin flex( $align-items: null, $justify-content: null, $flex-direction: null, $wrap: null, $text-aling: null){
+    display: flex;
+    @if $align-items != null {
+        align-items: $align-items;
+      }
+      @if $justify-content != null {
+        justify-content: $justify-content;
+      }
+      @if $flex-direction != null {
+        flex-direction: $flex-direction;
+      }
+      @if $wrap != null {
+        flex-wrap: $wrap;
+      }
+      @if $text-aling != null {
+        text-align: $text-aling;
+}  
+}

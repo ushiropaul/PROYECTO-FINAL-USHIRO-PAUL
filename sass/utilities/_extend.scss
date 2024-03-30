@@ -4,7 +4,16 @@
         font-family: "Source Code Pro", monospace;
         white-space: nowrap;
         border-right: 4px solid;
-        animation-fill-mode: forwards;
-        overflow: hidden;
         
+}
+
+.background {
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centrar-nivel-pro {
+margin: 0 auto;
+align-content: center;
 }
