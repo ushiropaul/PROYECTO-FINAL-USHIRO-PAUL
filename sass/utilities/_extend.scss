@@ -17,3 +17,12 @@
 margin: 0 auto;
 align-content: center;
 }
+
+.franja-divisora{
+        background-color: black;
+            text-align: center;
+            h2{
+                padding: 2rem;
+                color: $color-verde-texto;
+            }
+}

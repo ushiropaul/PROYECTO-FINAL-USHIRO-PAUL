@@ -1,0 +1,18 @@
+
+header{
+
+    .header{
+        background-color: black;
+        .contenedor-nav-header{
+            align-items: center;
+            text-align: center;
+            .texto-header {
+                color: $color-verde-texto;
+                &:hover{
+                    color: $color-verde-claro;
+                }
+            }
+        }
+    }
+    
+}

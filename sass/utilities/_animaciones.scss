@@ -15,3 +15,26 @@
     
 }
 
+// animacion para card de ventajas de kali
+@keyframes curbl {
+                            
+    0% {
+      background: #ffffff;
+    }
+  
+    49% {
+      background: #ffffff;
+    }
+  
+    60% {
+      background: transparent;
+    }
+  
+    99% {
+      background: transparent;
+    }
+  
+    100% {
+      background: #ffffff;
+    }
+}

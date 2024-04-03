@@ -28,25 +28,25 @@
 <body>
     <!-- HEADER -->
     <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg  header">
                 <div class="container-fluid">
                     <img src="./img/logo-removebg-preview(1).png" alt="logo-principal-de-la-pagina">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse contenedor-nav-header" id="navbarNav">
+                    <ul class="navbar-nav ul-header">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link texto-header" aria-current="page" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
+                        <a class="nav-link texto-header" href="./pages/quienes-somos.html">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        <a class="nav-link texto-header " href="./pages/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/encarga.html">Comprar servicios <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                        <a class="nav-link texto-header" href="./pages/encarga.html">Comprar servicios <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
                             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
                           </svg></a>
                     </li>
@@ -56,77 +56,169 @@
             </nav>
     </header>
     <!-- MAIN INDEX---------------------------------------------------------------------------------------------------------------------->
-    <main class="index-main" id="particles-js">
-        <!-- se aclaran reglas y etica del trabajo.  -->
-        <section class="index-reglas"> 
+    <main class="index-main"> 
             <div class="presentacion-index">
-                <h1>HackersZ</h1>
+                <img src="./img/hacker-fondo-index-removebg-preview-removebg-preview.png" alt="imagen de decoracion de fondo de un hacker en el index.html">
+                <div class="brillo"></div>
+                <div class="presentacion-index-texto">
+                    <h1>HackersZ</h1>
                 <p>El mejor servicio de hacking, dado por gray hackers.</p>
-            </div>
-            <div>
-                <img src="./img/hacker-fondo-index.jpg" alt="imagen de decoracion de fondo de un hacker en el index.html">
-            </div>
-            <article class="contenedor-reglas">
-                <h2>Nuestras reglas:</h2>
-                <div class="reglas">
-                    <h5>PS C:\Users\ <b>Show</b> <span class="span-h5-regla">reglas</span></h5>
-                    <span class="regla-typing1">seguridad para usted, anonimato para nosotros. </span><br>
-                    <span class="regla-typing2">No haremos trabajos que nos pongan en peligro. </span><br>
-                    <span class="regla-typing3">Primero nos pagas, luego trabajamos. </span><br>
-                    <span class="regla-typing4">Solo se paga con Bitcoin. </span>
                 </div>
-            </article>
-            <article class="etica-del-trabajo">
-                <h2>Nuestra ética laboral:</h2>
-                <div class="etica">
-                    <h5>PS C:\Users\ <b>Show</b> <span class="span-h5-etica">etica</span></h5>
-                    <span class="etica-typing1">Nada que involucre tráfico ilegal (de cualquier tipo).</span><br>
-                    <span class="etica-typing2">Nada que involucre corrupción política (a esos los delatamos).</span><br>
-                    <span class="etica-typing3">Excepto eso, haremos lo que sea a cambio de dinero.</span><br>
-                </div>
-            </article>
-        </section>
-        <div class="div-franja-divisora"> 
-            <!-- divisor de secciones -->
-            <h2>Nuestras tecnologias</h2>
-        </div>
+            </div>
+    <!-- division de contenido -->
         <section class="nuestras-tecnologias">
-            <div class="img-de-fondo">
-                <div>
-                    <img src="./img/assets/logo-kali.png" alt="imagen del logo de kali linux, sin fondo">
-                <h3>Nosotros y Kali Linux:</h3>
+            <div class="div-franja-divisora"> 
+                <!-- divisor de secciones -->
+                <h2>Nuestras tecnologias</h2>
+            </div>
+            <div class="kali">
+                <div class="kali-introduccion">
+                <div class="kali-texto col-sm-12 col-md-4">
+                    <h3>Nosotros y Kali Linux:</h3>
                 <p>
-                    Nosotros, como profesionales de la seguridad informática, utilizamos Kali Linux como nuestra principal herramienta para pruebas de penetración y hacking. Kali Linux es una distribución de Linux basada en Debian, diseñada específicamente para pruebas de seguridad y auditorías.
-                    En este informe, exploraremos las ventajas técnicas de Kali Linux, cómo funciona y por qué es nuestra elección preferida para llevar a cabo nuestras actividades de hacking.
+                    Nosotros, como <b>profesionales del <strong>hacking</strong></b>, utilizamos <strong>Kali Linux</strong> como nuestra <b>principal herramienta</b> para pruebas de penetración y hacking. Es nuestra elección preferida para llevar a cabo nuestros <strong>trabajos de hackeo para usted</strong>.
                 </p>
                 </div>
+                <img src="./img/assets/logo-kali-removebg-preview.png" alt="imagen del logo de kali linux, sin fondo">
+                </div>
             </div>
-            <article>
-                <h2>Ventajas Técnicas de Kali Linux</h2>
+            <article class="ventajas-kali">
+                <div class="presentacion-ventajas-kali">
+                    <h2>Ventajas Técnicas de Kali Linux</h2>
                 <p>
                     Kali Linux ofrece una serie de ventajas técnicas que la convierten en la opción ideal para profesionales de la seguridad y hackers:
                 </p>
-                <ul>
-                    <li><strong>Amplia gama de herramientas:</strong> Kali Linux viene preinstalado con más de 600 herramientas de pruebas de penetración, incluidas herramientas para escaneo de vulnerabilidades, enumeración de redes, explotación de sistemas, análisis forense y mucho más.</li>
-                    <li><strong>Kernel personalizado:</strong> Kali Linux utiliza un kernel Linux personalizado, optimizado para pruebas de seguridad y hacking. Este kernel incluye parches y configuraciones específicas que mejoran el rendimiento y la compatibilidad con las herramientas de seguridad.</li>
-                    <li><strong>Modo Live y modo persistente:</strong> Kali Linux se puede ejecutar en modo Live desde un USB o DVD sin necesidad de instalación en el disco duro. Además, ofrece la opción de crear una instalación persistente en la que se pueden guardar cambios y datos entre sesiones.</li>
-                    <li><strong>Herramientas actualizadas:</strong> El equipo de desarrollo de Kali Linux realiza actualizaciones regulares de las herramientas incluidas en la distribución, garantizando que siempre tengamos acceso a las últimas versiones de las herramientas y las últimas vulnerabilidades.</li>
-                    <li><strong>Comunidad activa:</strong> Kali Linux cuenta con una gran comunidad de usuarios y desarrolladores que ofrecen soporte, recursos y herramientas adicionales que pueden ser útiles en nuestro trabajo diario. Además, existe una amplia documentación y tutoriales disponibles en línea para ayudarnos a aprender y aprovechar al máximo Kali Linux.</li>
-                </ul>
+                </div>
+                <div class="ventajas-kali-contenedor-cards">
+                    <div class="ventajas-kali-card">
+                        <div class="container">
+                            <div class="container_terminal"></div>
+                            <div class="terminal_toolbar">
+                                <div class="butt">
+                                    <button class="btn btn-color"></button>
+                                    <button class="btn"></button>
+                                    <button class="btn"></button>
+                                </div>
+                                <p class="user">admin@admin: ~</p>
+                            </div>
+                            <div class="terminal_body">
+                                <div class="terminal_promt">
+                                    <span class="terminal_user">admin@admin:</span>
+                                    <span class="terminal_location">~</span>
+                                    <span class="terminal_bling">$ <strong>Amplia gama de herramientas</strong></span>
+                                    <span class="terminal_cursor"></span>
+                                </div>
+                                <p id="texto-kali">
+                                    Kali Linux viene preinstalado con más de 600 herramientas de pruebas de penetración, incluidas herramientas para escaneo de vulnerabilidades, enumeración de redes, explotación de sistemas, análisis forense y mucho más.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="ventajas-kali-card">
+                        <div class="container">
+                            <div class="container_terminal"></div>
+                            <div class="terminal_toolbar">
+                                <div class="butt">
+                                    <button class="btn btn-color"></button>
+                                    <button class="btn"></button>
+                                    <button class="btn"></button>
+                                </div>
+                                <p class="user">admin@admin: ~</p>
+                            </div>
+                            <div class="terminal_body">
+                                <div class="terminal_promt">
+                                    <span class="terminal_user">admin@admin:</span>
+                                    <span class="terminal_location">~</span>
+                                    <span class="terminal_bling">$ <strong>Kernel personalizado</strong> </span>
+                                    <span class="terminal_cursor"></span>
+                                </div>
+                                <p id="texto-kali">
+                                    Kali Linux utiliza un kernel Linux personalizado, optimizado para pruebas de seguridad y hacking. Este kernel incluye parches y configuraciones específicas que mejoran el rendimiento y la compatibilidad con las herramientas de seguridad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="ventajas-kali-card">
+                        <div class="container">
+                            <div class="container_terminal"></div>
+                            <div class="terminal_toolbar">
+                                <div class="butt">
+                                    <button class="btn btn-color"></button>
+                                    <button class="btn"></button>
+                                    <button class="btn"></button>
+                                </div>
+                                <p class="user">admin@admin: ~</p>
+                            </div>
+                            <div class="terminal_body">
+                                <div class="terminal_promt">
+                                    <span class="terminal_user">admin@admin:</span>
+                                    <span class="terminal_location">~</span>
+                                    <span class="terminal_bling">$ <strong>Herramientas actualizadas</strong> </span>
+                                    <span class="terminal_cursor"></span>
+                                </div>
+                                <p id="texto-kali">
+                                    El equipo de desarrollo de Kali Linux realiza actualizaciones regulares de las herramientas incluidas en la distribución, garantizando que siempre tengamos acceso a las últimas versiones de las herramientas y las últimas vulnerabilidades
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="ventajas-kali-card">
+                        <div class="container">
+                            <div class="container_terminal"></div>
+                            <div class="terminal_toolbar">
+                                <div class="butt">
+                                    <button class="btn btn-color"></button>
+                                    <button class="btn"></button>
+                                    <button class="btn"></button>
+                                </div>
+                                <p class="user">admin@admin: ~</p>
+                            </div>
+                            <div class="terminal_body">
+                                <div class="terminal_promt">
+                                    <span class="terminal_user">admin@admin:</span>
+                                    <span class="terminal_location">~</span>
+                                    <span class="terminal_bling">$ <strong>Modo Live y modo persistente</strong> </span>
+                                    <span class="terminal_cursor"></span>
+                                </div>
+                                <p id="texto-kali">
+                                    Kali Linux se puede ejecutar en modo Live desde un USB o DVD sin necesidad de instalación en el disco duro. Además, ofrece la opción de crear una instalación persistente en la que se pueden guardar cambios y datos entre sesiones.
+                                </p>
+                            </div>
+                        </div>  
+                    </div> 
+                </div>               
             </article>
-            <article>
-                <h2>Funcionamiento de Kali Linux</h2>
-                <p>
-                    Kali Linux se basa en Debian y está diseñado específicamente con herramientas de pruebas de penetración en mente.
-                    Utiliza un modelo de desarrollo de código abierto y es mantenido por Offensive Security, una empresa de seguridad informática líder.
-                    La distribución se distribuye como una imagen ISO que puede ser instalada en una máquina virtual o en hardware físico.
-                </p>
-                <p>
-                    Una vez instalado, Kali Linux proporciona acceso a una amplia gama de herramientas de pruebas de penetración, incluidas herramientas para escaneo de vulnerabilidades, enumeración de redes, explotación de sistemas y mucho más.
-                    Estas herramientas pueden ser ejecutadas desde la línea de comandos o a través de la interfaz gráfica de usuario.
-                </p>
-            </article>
+        </section>
 
+        <!-- se aclaran reglas y etica del trabajo.  -->
+        <section class="index-reglas">
+            <div class="div-franja-divisora">
+                <h2>Nuestro entorno laboral</h2>
+            </div>
+            <div class="contenedor-terminales">
+                <article class="contenedor-reglas" data-aos="zoom-in" data-aos-duration="1000">
+                    <h3>Nuestras reglas:</h3>
+                    <div class="reglas">
+                        <h5>PS C:\Users\ <b>Show</b> <span class="span-h5-regla">reglas</span></h5>
+                        <span class="regla-typing1">seguridad para usted, anonimato para nosotros. </span>
+                        <span class="regla-typing2">No haremos trabajos que nos pongan en peligro. </span>
+                        <span class="regla-typing3">Primero nos pagas, luego trabajamos. </span>
+                        <span class="regla-typing4">Solo se paga con Bitcoin. </span>
+                    </div>
+                </article>
+                <article class="etica-del-trabajo" data-aos="zoom-in" data-aos-duration="1000">
+                    <h3>Nuestra ética:</h3>
+                    <div class="etica">
+                        <h5>PS C:\Users\ <b>Show</b> <span class="span-h5-etica">etica</span></h5>
+                        <span class="etica-typing1">Nada que involucre tráfico ilegal (de cualquier tipo).</span>
+                        <span class="etica-typing2">Nada que involucre corrupción política (a esos los delatamos).</span>
+                        <span class="etica-typing3">Excepto eso, haremos lo que sea a cambio de dinero.</span>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <!-- FOOTER ----------------------------------------------------------------------------------------------->

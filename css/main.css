@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,22 +14,35 @@ p, span, ul {
   font-family: "Source Code Pro", monospace;
 }
 
-.extend-reglas-span, .index-main .index-reglas article .reglas {
+body {
+  background: black;
+}
+
+.extend-reglas-span {
   display: block;
   font-family: "Source Code Pro", monospace;
   white-space: nowrap;
   border-right: 4px solid;
 }
 
-.background, .foto-background-servicios, .index-main .nuestras-tecnologias .img-de-fondo {
+.background, .foto-background-servicios, .index-main .nuestras-tecnologias .kali {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.centrar-nivel-pro, .foto-background-servicios div h1 {
+.centrar-nivel-pro, .foto-background-servicios div h1, .index-main .index-reglas .contenedor-terminales, .index-main .presentacion-index .presentacion-index-texto {
   margin: 0 auto;
   align-content: center;
+}
+
+.franja-divisora, .index-main .index-reglas .div-franja-divisora, .index-main .div-franja-divisora {
+  background-color: black;
+  text-align: center;
+}
+.franja-divisora h2, .index-main .index-reglas .div-franja-divisora h2, .index-main .div-franja-divisora h2 {
+  padding: 2rem;
+  color: rgb(0, 129, 11);
 }
 
 @keyframes typing {
@@ -46,60 +58,235 @@ p, span, ul {
     border-color: transparent;
   }
 }
-.index-main {
+@keyframes curbl {
+  0% {
+    background: #ffffff;
+  }
+  49% {
+    background: #ffffff;
+  }
+  60% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+header .header {
   background-color: black;
 }
-.index-main .index-reglas article {
-  background-color: rgba(20, 17, 29, 0.938);
+header .header .contenedor-nav-header {
+  align-items: center;
+  text-align: center;
 }
-.index-main .index-reglas article .reglas {
-  /* Añade las reglas de animación */
-}
-.index-main .index-reglas article .reglas .regla-typing1 {
-  animation: typing 3s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .index-reglas article .reglas .regla-typing2 {
-  animation: typing 3s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .index-reglas article .reglas .regla-typing3 {
-  animation: typing 2.5s steps(37) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .index-reglas article .reglas .regla-typing4 {
-  animation: typing 2.5s steps(26) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .index-reglas article .etica .etica-typing1 {
-  animation: typing 3s steps(54) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .index-reglas article .etica .etica-typing2 {
-  animation: typing 3s steps(62) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .index-reglas article .etica .etica-typing3 {
-  animation: typing 3s steps(51) infinite, efectoBorde 0.5s step-end infinite alternate;
-}
-.index-main .div-franja-divisora {
-  height: 100px;
-  background-image: url(./../);
-}
-.index-main .div-franja-divisora h2 {
+header .header .contenedor-nav-header .texto-header {
   color: rgb(0, 129, 11);
 }
-.index-main .nuestras-tecnologias {
+header .header .contenedor-nav-header .texto-header:hover {
+  color: rgb(62, 203, 19);
+}
+
+.index-main {
   background-color: rgba(6, 92, 6, 0.123);
 }
-.index-main .nuestras-tecnologias .img-de-fondo {
-  background-image: url(./../../video/codigo-binario.mp);
-  height: 700px;
+.index-main .presentacion-index {
+  display: flex;
+  padding-top: 2.5rem;
 }
-.index-main .nuestras-tecnologias .img-de-fondo div {
+.index-main .presentacion-index .brillo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at left, rgba(75, 109, 61, 0) 0%, rgb(27, 31, 26) 50%, rgba(0, 0, 0, 0.9) 100%);
+  z-index: -100;
+}
+.index-main .presentacion-index .presentacion-index-texto h1 {
+  font-size: 3rem;
+}
+.index-main .presentacion-index .presentacion-index-texto p {
+  animation: typing 5s steps(52) alternate infinite;
+}
+.index-main .nuestras-tecnologias {
+  padding-bottom: 2rem;
+  background-color: rgba(6, 92, 6, 0.123);
+}
+.index-main .nuestras-tecnologias .kali {
+  background-image: url(./../img/code_1_loop_img.avif);
+}
+.index-main .nuestras-tecnologias .kali .kali-introduccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: wrap;
   height: 100%;
   background-color: rgba(6, 92, 6, 0.123);
   backdrop-filter: blur(5px);
 }
-.index-main .nuestras-tecnologias .img-de-fondo div h3 {
+.index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto {
+  background-color: rgba(20, 17, 29, 0.539);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+.index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto h3 {
+  margin-bottom: 0.5rem;
   color: rgb(62, 203, 19);
 }
-.index-main .nuestras-tecnologias .img-de-fondo div p {
+.index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto p {
   color: rgb(209, 207, 214);
+}
+.index-main .nuestras-tecnologias .ventajas-kali .presentacion-ventajas-kali {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container {
+  max-width: 540px;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(#504b45 0%, #3c3b37 100%);
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar .butt {
+  display: flex;
+  align-items: center;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar .butt .btn-color {
+  background: #ee411a;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar .butt .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 5px;
+  font-size: 8px;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(#7d7871 0%, #595953 100%);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar .butt .btn:hover {
+  cursor: pointer;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar .butt .btn:focus {
+  outline: none;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar .user {
+  margin-top: 1rem;
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body {
+  display: block;
+  background: rgba(56, 4, 40, 0.9);
+  width: 400px;
+  padding: 1rem;
+  margin-top: -1px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt {
+  display: flex;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt span {
+  margin-left: 4px;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_user {
+  color: #7eda28;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_location {
+  color: #4878c0;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_bling {
+  color: #dddddd;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_cursor {
+  display: block;
+  height: 14px;
+  width: 5px;
+  margin-left: 10px;
+  animation: curbl 1200ms linear infinite;
+}
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .butt--exit {
+  background: linear-gradient(#f37458 0%, #de4c12 100%);
+}
+.index-main .index-reglas .contenedor-terminales {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  gap: 1rem;
+}
+.index-main .index-reglas .contenedor-terminales article {
+  background-color: rgba(20, 17, 29, 0.938);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.index-main .index-reglas .contenedor-terminales article .reglas {
+  display: flex;
+  flex-direction: column;
+}
+.index-main .index-reglas .contenedor-terminales article .reglas span {
+  padding: 0.5rem 0 0.5rem 0;
+}
+.index-main .index-reglas .contenedor-terminales article .reglas .regla-typing1 {
+  animation: typing 3s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
+}
+.index-main .index-reglas .contenedor-terminales article .reglas .regla-typing2 {
+  animation: typing 3s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
+}
+.index-main .index-reglas .contenedor-terminales article .reglas .regla-typing3 {
+  animation: typing 2.5s steps(37) infinite, efectoBorde 0.5s step-end infinite alternate;
+}
+.index-main .index-reglas .contenedor-terminales article .reglas .regla-typing4 {
+  animation: typing 2.5s steps(26) infinite, efectoBorde 0.5s step-end infinite alternate;
+}
+.index-main .index-reglas .contenedor-terminales article .etica {
+  display: flex;
+  flex-direction: column;
+}
+.index-main .index-reglas .contenedor-terminales article .etica span {
+  padding: 0.5rem 0 0.5rem 0;
+}
+.index-main .index-reglas .contenedor-terminales article .etica .etica-typing1 {
+  animation: typing 3s steps(54) infinite, efectoBorde 0.5s step-end infinite alternate;
+}
+.index-main .index-reglas .contenedor-terminales article .etica .etica-typing2 {
+  animation: typing 3s steps(62) infinite, efectoBorde 0.5s step-end infinite alternate;
+}
+.index-main .index-reglas .contenedor-terminales article .etica .etica-typing3 {
+  animation: typing 3s steps(51) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 
 .foto-background-servicios {
