@@ -23,3 +23,12 @@
         text-align: $text-aling;
 }  
 }
+
+@mixin grid($columns, $rows, $areas: null){
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  @if $areas != null {
+    grid-template-areas: $areas;
+  }
+}

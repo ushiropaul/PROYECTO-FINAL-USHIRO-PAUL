@@ -1,0 +1,35 @@
+
+footer {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .contenedor-footer{
+        padding-top: 5rem;
+        text-align: center;
+        .contenedor-pages-footer{
+            @include flex(center, space-evenly, row, wrap, center);
+            gap: 3rem;
+
+            .pages-nav-footer{
+                @include flex(center, null, column, nowrap, center);
+                // background-color: $color-negro-terminal;
+                max-width: 500px;
+                height: 300px;
+                padding-right: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-radius: .5rem;
+
+                    ul{
+                        @include flex(center, null, column, nowrap, left);
+                        list-style: none;
+                        gap: 1rem;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+            }
+        }
+    }
+}

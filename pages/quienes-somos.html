@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HackersZ</title>
-    <link rel="shortcut icon" href="./../img/logo-resize_1_-removebg-preview.png" type="image/x-icon">
+    <!-- Meta tags -->
+    <meta name="keywords" content="HackersZ, equipo de expertos en seguridad digital, vulnerabilidades en sistemas, seguridad informática, contratar hacker">
+    <meta name="description" content="HackersZ es un equipo de expertos en seguridad digital que se especializa en proporcionar soluciones efectivas para abordar los desafíos digitales de nuestros clientes. Contrata a nuestros hackers para resolver tus necesidades de seguridad informática de manera eficaz y confidencial.">
+    <title>Quienes somos | HackersZ</title>
+    <link rel="shortcut icon" href="./../img/logo-removebg-preview_1_-removebg-preview.png" type="image/x-icon">
     <!-- Libreria AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fonts -->
@@ -25,25 +28,27 @@
 </head>
 <body>    <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="./../img/logo-removebg-preview(1).png" alt="logo-principal-de-la-pagina">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+        <nav class="navbar navbar-expand-lg  header">
+            <div class="container-fluid contenedor-fluido">
+                <img src="./../img/logo-removebg-preview_1_-removebg-preview.png" alt="logo-principal-de-la-pagina">
+                <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse contenedor-nav-header" id="navbarNav">
+                <ul class="navbar-nav ul-header">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./../index.html">Inicio</a>
+                    <a class="nav-link texto-header" aria-current="page" href="./../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./quienes-somos-index">Quienes somos</a>
+                    <a class="nav-link texto-header" href="./quienes-somos.html">Quienes somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                    <a class="nav-link texto-header " href="./servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./encarga.html">Comprar servicios</a>
+                    <a class="nav-link texto-header" href="./encarga.html">Contratar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                    </svg></a>
                 </li>
                 </ul>
             </div>
@@ -56,9 +61,9 @@
         <!-- quienes somos y porque deberias contratarnoss -->
         <section class="quienes-somos">
                     <article class="equipo row">
-                        <h2>
+                        <h1>
                             Somos un equipo
-                        </h2>
+                        </h1>
                         <p class="col-sm-12 col-md-6 col-lg-6">
                             Somos un equipo de <strong>expertos en seguridad digital</strong> que se especializa en proporcionar soluciones efectivas para abordar los desafíos digitales de nuestros clientes. 
                             Nos destacamos en <strong>encontrar vulnerabilidades en sistemas reforzados</strong>, así como en la implementación de medidas proactivas para <i>realizar tareas de forma <strong>anónima, nunca dejando rastro</strong></i>.
@@ -68,10 +73,13 @@
                             Si buscas un <i>equipo serio y confiable</i> para abordar tus necesidades de seguridad informática, estamos aquí para ayudarte a <i><strong>conseguír lo que desees</strong> de manera <strong>eficaz y confidencial.</strong></i>
                         </p>
                     </article>
+                    <!-- cartas del equipo de hackers -->
                     <article class="cards-equipo">
+                        
                         <div class="card-equipo Ushza">
-                            <h4>Ushza</h4>
-                            <div>
+                            
+                            <div class="habilidades-equipo">
+                                <h4>Ushza</h4>
                                 <h5>Habilidades:</h5>
                                 <ul>
                                     <li>Manipulación psicológica. <span>7/10</span></li>
@@ -79,11 +87,19 @@
                                     <li>Intrusión furtiva en redes. <span>10/10</span></li>
                                     <li>Análisis forense digital. <span>6/10</span></li>
                                 </ul>
+                                <div>
+                                    <a href="./encarga.html">
+                                        <button class="contratar-hacker-btn">
+                                            Contratar hacker
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="card-equipo Zartros">
-                            <h4>Zartros</h4>
-                            <div>
+                            
+                            <div class="habilidades-equipo">
+                                <h4>Zartros</h4>
                                 <h5>Habilidades:</h5>
                                 <ul>
                                     <li>Ingeniería social experta. <span>10/10</span></li>
@@ -91,11 +107,19 @@
                                     <li>Explotación de día cero. <span>9/10</span></li>
                                     <li>Creación de botnets y control remoto. <span>8/10</span></li>
                                 </ul>
+                                <div>
+                                    <a href="./encarga.html">
+                                        <button class="contratar-hacker-btn">
+                                            Contratar hacker
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="card-equipo Kali-zen">
-                            <h4>Kali-zen</h4>
-                            <div>
+                            
+                            <div class="habilidades-equipo">
+                                <h4>Kali-zen</h4>
                                 <h5>Habilidades:</h5>
                                 <ul>
                                     <li>Desarrollo de exploits personalizados. <span>10/10</span></li>
@@ -103,50 +127,86 @@
                                     <li>Técnicas de evasión de detección. <span>10/10</span></li>
                                     <li>Análisis de tráfico cifrado. <span>9/10</span></li>
                                 </ul>
+                                <div>
+                                    <a href="./encarga.html">
+                                        <button class="contratar-hacker-btn">
+                                            Contratar hacker
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="card-equipo Nollan">
-                            <h4>Nollan</h4>
-                            <div>
+                            
+                            <div class="habilidades-equipo">
+                                <h4>Nollan</h4>
                                 <h5>Habilidades:</h5>
                                 <ul>
                                     <li>Ingeniería de firmware. <span>8/10</span></li>
                                     <li>Manejo avanzado de sistemas de gestión de identidades. <span>10/10</span></li>
                                     <li>hofuscación de código y técnicas de camuflaje. <span>10/10</span></li>
                                     <li>Explotación de dispositivos IoT. <span>7/10</span></li>
+                                
                                 </ul>
+                                <div>
+                                    <a href="./encarga.html">
+                                        <button class="contratar-hacker-btn">
+                                            Contratar hacker
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
         </section>
     </main>
 
-      <!-- FOOTER ----------------------------------------------------------------------------------------------->
-  <footer>
-    <div class="logo-footer">
-        <img src="./../img/logo-resize_1_-removebg-preview.png" alt="imagen de logo de la página en el footer">
-        <p>El mejor servicio de hacking, en HackersZ.</p>
-    </div>
-    <div class="pages-nav-footer">
-        <h3>Mira nuestras páginas:</h3>
-        <nav>
-            <ul>
-               <li>
-                <a href="./../index.html">Inicio</a>
-               </li>
-               <li>
-                <a href="./quienes-somos.html">Quienes somos</a>
-               </li>
-               <li>
-                <a href="./servicios.html">Servicios</a>
-               </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="copyright-footer">
-        <p>&copy; Derechos reservados a HackersZ | 2024</p>
-    </div>
-</footer>
+        <!-- FOOTER ----------------------------------------------------------------------------------------------->
+        <footer>
+            <div class="logo-footer">
+                <img src="./../img/logo-removebg-preview_1_-removebg-preview.png" alt="imagen de logo de la página en el footer">
+                <p>El mejor servicio de hacking, en HackersZ.</p>
+                <div class="copyright-footer">
+                    <p>&copy; Derechos reservados a HackersZ | 2024</p>
+                </div>
+            </div>
+            <div class="contenedor-footer">
+                <nav class="contenedor-pages-footer">
+                    <div class="pages-nav-footer">
+                        <div>
+                            <h3>Páginas:</h3>
+                            <ul>
+                                <li>
+                                    <a href="./../index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="./quienes-somos.html">Quienes somos</a>
+                                </li>
+                                <li>
+                                    <a href="./encarga.html">Comprar servicios</a>
+                                </li>
+                                <li>
+                                    <a href="./servicios.html">Servicios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pages-nav-footer">
+                        <div>
+                            <h3>Políticas:</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="./privacidad.html">Politicas de privacidad</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+    
+            </div>
+                    
+            
+        </footer>
     <!-- SCRIPTS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- libreria AOS -->

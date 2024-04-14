@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +19,11 @@ body {
   background: black;
 }
 
+::selection {
+  background-color: rgb(255, 255, 255); /* Cambia el color de fondo de la selección */
+  color: #000000;
+}
+
 .extend-reglas-span {
   display: block;
   font-family: "Source Code Pro", monospace;
@@ -25,13 +31,19 @@ body {
   border-right: 4px solid;
 }
 
-.background, .foto-background-servicios, .index-main .nuestras-tecnologias .kali {
+.background, .main-comprar-servicios .contenedor-form, .main-servicios .foto-background-servicios, .index-main .nuestras-tecnologias .kali {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.centrar-nivel-pro, .foto-background-servicios div h1, .index-main .index-reglas .contenedor-terminales, .index-main .presentacion-index .presentacion-index-texto {
+.background-equipo, main .quienes-somos .cards-equipo .Nollan, main .quienes-somos .cards-equipo .Kali-zen, main .quienes-somos .cards-equipo .Zartros, main .quienes-somos .cards-equipo .Ushza {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centrar-nivel-pro, .main-servicios .foto-background-servicios div h1, .index-main .index-reglas .contenedor-terminales {
   margin: 0 auto;
   align-content: center;
 }
@@ -42,7 +54,25 @@ body {
 }
 .franja-divisora h2, .index-main .index-reglas .div-franja-divisora h2, .index-main .div-franja-divisora h2 {
   padding: 2rem;
-  color: rgb(0, 129, 11);
+  color: #00810b;
+}
+
+.brillo, .index-main .presentacion-index .brillo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at left, rgba(75, 109, 61, 0) 0%, rgb(27, 31, 26) 50%, rgba(0, 0, 0, 0.9) 100%);
+  z-index: -100;
+}
+
+.input-form, .main-comprar-servicios .contenedor-form .form-encarga .row-form .boton-enviar, .main-comprar-servicios .contenedor-form .form-encarga .row-form div textarea, .main-comprar-servicios .contenedor-form .form-encarga .row-form div select, .main-comprar-servicios .contenedor-form .form-encarga .row-form div input {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.3rem;
+  border-radius: 1rem;
 }
 
 @keyframes typing {
@@ -76,17 +106,67 @@ body {
   }
 }
 header .header {
-  background-color: black;
+  z-index: 99999;
+  background-color: rgb(0, 0, 0);
 }
-header .header .contenedor-nav-header {
+header .header .contenedor-fluido img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+header .header .contenedor-fluido .contenedor-nav-header {
   align-items: center;
   text-align: center;
 }
-header .header .contenedor-nav-header .texto-header {
-  color: rgb(0, 129, 11);
+header .header .contenedor-fluido .contenedor-nav-header .texto-header {
+  color: #00810b;
 }
-header .header .contenedor-nav-header .texto-header:hover {
-  color: rgb(62, 203, 19);
+header .header .contenedor-fluido .contenedor-nav-header .texto-header:hover {
+  color: #3ecb13;
+}
+
+footer {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer .contenedor-footer {
+  padding-top: 5rem;
+  text-align: center;
+}
+footer .contenedor-footer .contenedor-pages-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 3rem;
+}
+footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  max-width: 500px;
+  height: 300px;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: left;
+  list-style: none;
+  gap: 1rem;
+}
+footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul a {
+  text-decoration: none;
 }
 
 .index-main {
@@ -96,19 +176,23 @@ header .header .contenedor-nav-header .texto-header:hover {
   display: flex;
   padding-top: 2.5rem;
 }
-.index-main .presentacion-index .brillo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at left, rgba(75, 109, 61, 0) 0%, rgb(27, 31, 26) 50%, rgba(0, 0, 0, 0.9) 100%);
-  z-index: -100;
+.index-main .presentacion-index div {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  align-content: center;
 }
-.index-main .presentacion-index .presentacion-index-texto h1 {
-  font-size: 3rem;
+.index-main .presentacion-index div .presentacion-index-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-.index-main .presentacion-index .presentacion-index-texto p {
+.index-main .presentacion-index div .presentacion-index-texto h1 {
+  font-size: 4rem;
+}
+.index-main .presentacion-index div .presentacion-index-texto p {
   animation: typing 5s steps(52) alternate infinite;
 }
 .index-main .nuestras-tecnologias {
@@ -128,7 +212,7 @@ header .header .contenedor-nav-header .texto-header:hover {
   backdrop-filter: blur(5px);
 }
 .index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto {
-  background-color: rgba(20, 17, 29, 0.539);
+  background-color: rgba(20, 17, 29, 0.641);
   backdrop-filter: blur(5px);
   padding: 2rem;
   border-radius: 20px;
@@ -136,7 +220,7 @@ header .header .contenedor-nav-header .texto-header:hover {
 }
 .index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto h3 {
   margin-bottom: 0.5rem;
-  color: rgb(62, 203, 19);
+  color: #3ecb13;
 }
 .index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto p {
   color: rgb(209, 207, 214);
@@ -155,7 +239,7 @@ header .header .contenedor-nav-header .texto-header:hover {
   flex-wrap: wrap;
 }
 .index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container {
-  max-width: 540px;
+  max-width: 600px;
 }
 .index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_toolbar {
   display: flex;
@@ -205,8 +289,8 @@ header .header .contenedor-nav-header .texto-header:hover {
 }
 .index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body {
   display: block;
-  background: rgba(56, 4, 40, 0.9);
-  width: 400px;
+  background: rgba(20, 17, 29, 0.996);
+  max-width: 600px;
   padding: 1rem;
   margin-top: -1px;
   font-size: 12px;
@@ -228,6 +312,9 @@ header .header .contenedor-nav-header .texto-header:hover {
 .index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_bling {
   color: #dddddd;
 }
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_bling strong {
+  font-size: 0.8rem;
+}
 .index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body .terminal_promt .terminal_cursor {
   display: block;
   height: 14px;
@@ -235,23 +322,30 @@ header .header .contenedor-nav-header .texto-header:hover {
   margin-left: 10px;
   animation: curbl 1200ms linear infinite;
 }
-.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .butt--exit {
-  background: linear-gradient(#f37458 0%, #de4c12 100%);
+.index-main .nuestras-tecnologias .ventajas-kali .ventajas-kali-contenedor-cards .ventajas-kali-card .container .terminal_body p {
+  font-size: 0.9rem;
 }
 .index-main .index-reglas .contenedor-terminales {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
   padding: 2rem;
   gap: 1rem;
 }
 .index-main .index-reglas .contenedor-terminales article {
-  background-color: rgba(20, 17, 29, 0.938);
+  background-color: rgba(20, 17, 29, 0.996);
   display: flex;
   align-items: center;
   flex-direction: column;
   max-width: 450px;
   padding: 1rem;
   border-radius: 20px;
+}
+.index-main .index-reglas .contenedor-terminales article:hover {
+  box-shadow: 0 0 15px 0 black;
 }
 .index-main .index-reglas .contenedor-terminales article .reglas {
   display: flex;
@@ -261,16 +355,16 @@ header .header .contenedor-nav-header .texto-header:hover {
   padding: 0.5rem 0 0.5rem 0;
 }
 .index-main .index-reglas .contenedor-terminales article .reglas .regla-typing1 {
-  animation: typing 3s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 .index-main .index-reglas .contenedor-terminales article .reglas .regla-typing2 {
-  animation: typing 3s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5s steps(47) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 .index-main .index-reglas .contenedor-terminales article .reglas .regla-typing3 {
-  animation: typing 2.5s steps(37) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5.5s steps(37) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 .index-main .index-reglas .contenedor-terminales article .reglas .regla-typing4 {
-  animation: typing 2.5s steps(26) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5.5s steps(26) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 .index-main .index-reglas .contenedor-terminales article .etica {
   display: flex;
@@ -280,21 +374,21 @@ header .header .contenedor-nav-header .texto-header:hover {
   padding: 0.5rem 0 0.5rem 0;
 }
 .index-main .index-reglas .contenedor-terminales article .etica .etica-typing1 {
-  animation: typing 3s steps(54) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5s steps(54) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 .index-main .index-reglas .contenedor-terminales article .etica .etica-typing2 {
-  animation: typing 3s steps(62) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5s steps(62) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 .index-main .index-reglas .contenedor-terminales article .etica .etica-typing3 {
-  animation: typing 3s steps(51) infinite, efectoBorde 0.5s step-end infinite alternate;
+  animation: typing 5s steps(51) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 
-.foto-background-servicios {
-  background-image: url(./../../img/hacker-img.jpg);
+.main-servicios .foto-background-servicios {
+  background-image: url(./../img/hacker-img.jpg);
   width: 100%;
   height: 30rem;
 }
-.foto-background-servicios div {
+.main-servicios .foto-background-servicios div {
   background-color: rgba(6, 92, 6, 0.123);
   backdrop-filter: blur(3px);
   height: 100%;
@@ -302,6 +396,306 @@ header .header .contenedor-nav-header .texto-header:hover {
   align-items: center;
   justify-content: wrap;
   flex-direction: center;
+}
+.main-servicios .foto-background-servicios div h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.834);
+  font-weight: 800;
+}
+.main-servicios .foto-background-servicios div h1 .titulos-servicios {
+  font-family: "Kode Mono", monospace;
+  font-size: 2.3rem;
+}
+.main-servicios .div-franja-divisora {
+  background-color: black;
+  height: 4rem;
+  width: 100%;
+}
+.main-servicios .servicios {
+  padding-top: 2rem;
+  background-color: rgba(6, 92, 6, 0.123);
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/019/140/original/binary-code-digital-background-free-video.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.main-servicios .servicios article {
+  background-color: rgba(20, 17, 29, 0.996);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  max-width: 400px;
+  text-align: center;
+}
+.main-servicios .servicios article h2 {
+  font-size: 1.5rem;
+}
+.main-servicios .servicios article p {
+  color: #3ecb13;
+}
+.main-servicios .servicios article .contenedor-details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.main-servicios .servicios article .contenedor-details details {
+  background-color: rgba(6, 92, 6, 0.123);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin-bottom: 0.3rem;
+}
+.main-servicios .servicios article .contenedor-details details summary {
+  color: rgb(71, 150, 252);
+}
+.main-servicios .servicios article .contenedor-details details p {
+  color: #00810b;
+}
+
+main .quienes-somos .equipo {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+main .quienes-somos .equipo h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+main .quienes-somos .equipo p {
+  color: #3ecb13;
+}
+main .quienes-somos .cards-equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-rows: repeat(2, 550px);
+  grid-template-areas: 0.5rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+main .quienes-somos .cards-equipo .card-equipo {
+  background-color: rgba(20, 17, 29, 0.641);
+  border-radius: 2rem;
+  position: relative;
+  margin: 1.5rem;
+}
+main .quienes-somos .cards-equipo .card-equipo h4 {
+  padding-top: 1rem;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo {
+  border-radius: 2rem 0 0 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 250px;
+  height: 100%;
+  background-color: rgba(20, 17, 29, 0.641);
+  overflow: hidden;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo ul li {
+  font-size: 1rem;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo ul li span {
+  background-color: rgb(2, 44, 6);
+  padding: 0.2rem;
+  border-radius: 5px;
+  color: #3ecb13;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo div {
+  display: flex;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo div .contratar-hacker-btn {
+  background-color: rgb(32, 92, 212);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+}
+main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo div .contratar-hacker-btn:hover {
+  transition: all 0.3s;
+  color: #3ecb13;
+  background-color: rgba(20, 17, 29, 0.996);
+}
+main .quienes-somos .cards-equipo .Ushza {
+  background-image: url(./../../img/Ushza.jpg);
+}
+main .quienes-somos .cards-equipo .Zartros {
+  background-image: url(./../img/Zartros.jpg);
+}
+main .quienes-somos .cards-equipo .Kali-zen {
+  background-image: url(./../img/kali-zen.jpg);
+}
+main .quienes-somos .cards-equipo .Nollan {
+  background-image: url(./../img/nollan.jpg);
+}
+
+.main-comprar-servicios {
+  background-color: rgba(6, 92, 6, 0.123);
+}
+.main-comprar-servicios .presentacion-servicios {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.main-comprar-servicios .presentacion-servicios .titulos-servicios {
+  font-family: "Kode Mono", monospace;
+  font-size: 2.4rem;
+}
+.main-comprar-servicios .contenedor-form {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url(https://cdn.create.vista.com/api/media/small/356467302/stock-photo-close-up-of-minified-javascript-file-computer-programming-source-code-for-html-website-development);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-comprar-servicios .contenedor-form .form-encarga {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  column-gap: 2rem;
+  margin: 1rem;
+  background-color: rgba(6, 92, 6, 0.123);
+  box-shadow: 10px 10px 10px 10px black;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 2rem 0 2rem 0;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form {
+  display: flex;
+  flex-direction: column;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form div {
+  display: flex;
+  flex-direction: column;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form div label {
+  color: #3ecb13;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form div select option {
+  color: #000;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form div textarea {
+  font-family: "Source Code Pro", monospace;
+  font-weight: normal;
+  color: #00810b;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form .boton-enviar {
+  margin-top: 1rem;
+}
+.main-comprar-servicios .contenedor-form .form-encarga .row-form .boton-enviar:hover {
+  transition: all 0.3s;
+  background-color: #000000;
+  color: #3ecb13;
+}
+
+.main-privacidad {
+  display: flex;
+  background-color: rgba(6, 92, 6, 0.123);
+  justify-content: center;
+}
+.main-privacidad .contenedor-politicas {
+  margin-top: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(20, 17, 29, 0.996);
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  row-gap: 2rem;
+}
+.main-privacidad .contenedor-politicas .div-politicas {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(12, 10, 26);
+  padding: 2rem;
+  border-radius: 3rem 0 3rem 0;
+}
+
+@media screen and (max-width: 980px) {
+  .contenedor-fluido {
+    position: relative;
+  }
+  .contenedor-fluido .boton-menu {
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .contenedor-fluido .boton-menu:focus {
+    box-shadow: none;
+  }
+  .contenedor-fluido .boton-menu .menu-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(./../img/assets/menu.png);
+  }
+  .contenedor-fluido .contenedor-nav-header {
+    position: absolute;
+    top: 68px;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor-fluido .contenedor-nav-header .texto-header {
+    color: #00810b;
+  }
+  .contenedor-fluido .contenedor-nav-header .texto-header:hover {
+    color: #3ecb13;
+  }
+}
+@media screen and (max-width: 820px) {
+  .presentacion-index {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .kali-introduccion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  .cards-equipo {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

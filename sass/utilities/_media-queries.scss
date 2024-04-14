@@ -1,0 +1,67 @@
+
+
+// MEDIA QUERY PARA HEADER
+
+@media screen and (max-width:980px){
+    .contenedor-fluido{
+        position: relative;
+        .boton-menu{
+            position: relative;
+            border: none;
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            
+            &:focus {
+                box-shadow: none;
+            }
+            .menu-icon {
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                background-image: url(./../img/assets/menu.png);
+            }
+        }
+        .contenedor-nav-header{
+            position: absolute;
+            top: 68px;
+            background-color: black;
+            width: 100%;
+            padding-bottom: 1rem;
+            align-items: center;
+            text-align: center;
+            .texto-header {
+                color: $color-verde-texto;
+                &:hover{
+                    color: $color-verde-claro;
+                }
+            }
+        }
+    }
+}
+
+
+// MEDIA QUERIE MOBILE PARA INDEX.HTML
+
+@media screen and (max-width: 820px){
+    .presentacion-index{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .kali-introduccion{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+// MEDIA QUERY MOBILE PARA QUIENES-SOMOS.HTML
+@media screen and (max-width: 820px) {
+    .cards-equipo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

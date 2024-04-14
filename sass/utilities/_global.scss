@@ -11,3 +11,8 @@ p, span, ul{
 body {
     background: black;
 }
+
+::selection {
+    background-color: rgb(255, 255, 255); /* Cambia el color de fondo de la selección */
+    color: #000000;
+}

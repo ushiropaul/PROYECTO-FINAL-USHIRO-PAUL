@@ -6,7 +6,7 @@
     <meta name="description" content="Ofrecemos los servicios de hacking más avanzados del mundo. Somos expertos en seguridad informática y protección de datos. Contacta a nuestros gray hackers hoy mismo.">
     <meta name="keywords" content="hacking, hackers, hackear cuentas, hackear redes sociales, hackear correos electrónicos, contraseñas, hackeo de contraseñas, obtener acceso no autorizado, hackear sistemas, vulnerabilidades, exploits, piratear, servicios de hacking, hackeo personalizado, hackeo discreto, hackeo eficaz">
     <title>HackersZ</title>
-    <link rel="shortcut icon" href="./img/logo-resize_1_-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo-removebg-preview_1_-removebg-preview.png" type="image/x-icon">
     <!-- Libreria AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fonts -->
@@ -29,10 +29,10 @@
     <!-- HEADER -->
     <header>
             <nav class="navbar navbar-expand-lg  header">
-                <div class="container-fluid">
-                    <img src="./img/logo-removebg-preview(1).png" alt="logo-principal-de-la-pagina">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <div class="container-fluid contenedor-fluido">
+                    <img class="imagen-presentacion-index" src="./img/logo-removebg-preview_1_-removebg-preview.png" alt="logo-principal-de-la-pagina">
+                <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse contenedor-nav-header" id="navbarNav">
                     <ul class="navbar-nav ul-header">
@@ -46,9 +46,9 @@
                         <a class="nav-link texto-header " href="./pages/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link texto-header" href="./pages/encarga.html">Comprar servicios <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                        <a class="nav-link texto-header" href="./pages/encarga.html">Contratar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
                             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
-                          </svg></a>
+                        </svg></a>
                     </li>
                     </ul>
                 </div>
@@ -57,14 +57,16 @@
     </header>
     <!-- MAIN INDEX---------------------------------------------------------------------------------------------------------------------->
     <main class="index-main"> 
-            <div class="presentacion-index">
+            <section class="presentacion-index">
                 <img src="./img/hacker-fondo-index-removebg-preview-removebg-preview.png" alt="imagen de decoracion de fondo de un hacker en el index.html">
                 <div class="brillo"></div>
-                <div class="presentacion-index-texto">
-                    <h1>HackersZ</h1>
-                <p>El mejor servicio de hacking, dado por gray hackers.</p>
+                <div>
+                    <div class="presentacion-index-texto">
+                        <h1>HackersZ</h1>
+                        <p>El mejor servicio de hacking, dado por gray hackers.</p>
+                    </div>
                 </div>
-            </div>
+            </section>
     <!-- division de contenido -->
         <section class="nuestras-tecnologias">
             <div class="div-franja-divisora"> 
@@ -224,38 +226,52 @@
     <!-- FOOTER ----------------------------------------------------------------------------------------------->
     <footer>
         <div class="logo-footer">
-            <img src="./img/logo-resize_1_-removebg-preview.png" alt="imagen de logo de la página en el footer">
+            <img src="./img/logo-removebg-preview_1_-removebg-preview.png" alt="imagen de logo de la página en el footer">
             <p>El mejor servicio de hacking, en HackersZ.</p>
+            <div class="copyright-footer">
+                <p>&copy; Derechos reservados a HackersZ | 2024</p>
+            </div>
         </div>
-        <div class="pages-nav-footer">
-            <h3>Mira nuestras páginas:</h3>
-            <nav>
-                <ul>
-                   <li>
-                    <a href="./index.html">Inicio</a>
-                   </li>
-                   <li>
-                    <a href="./pages/quienes-somos.html">Quienes somos</a>
-                   </li>
-                   <li>
-                    <a href="./pages/encarga.html">Comprar servicios</a>
-                   </li>
-                   <li>
-                    <a href="./pages/servicios.html">Servicios</a>
-                   </li>
-                </ul>
+        <div class="contenedor-footer">
+            <nav class="contenedor-pages-footer">
+                <div class="pages-nav-footer">
+                    <div>
+                        <h3>Páginas:</h3>
+                        <ul>
+                            <li>
+                                <a href="./index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="./pages/quienes-somos.html">Quienes somos</a>
+                            </li>
+                            <li>
+                                <a href="./pages/encarga.html">Comprar servicios</a>
+                            </li>
+                            <li>
+                                <a href="./pages/servicios.html">Servicios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pages-nav-footer">
+                    <div>
+                        <h3>Políticas:</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="./pages/privacidad.html">Politicas de privacidad</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </nav>
+
         </div>
-        <div class="copyright-footer">
-            <p>&copy; Derechos reservados a HackersZ | 2024</p>
-        </div>
+                
+        
     </footer>
 
 <!-- SCRIPTS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
- <!-- stats.js lib -->
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
 <!-- libreria AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

@@ -2,17 +2,26 @@
 header{
 
     .header{
-        background-color: black;
-        .contenedor-nav-header{
-            align-items: center;
-            text-align: center;
-            .texto-header {
-                color: $color-verde-texto;
-                &:hover{
-                    color: $color-verde-claro;
+        z-index: 99999;
+        background-color: rgb(0, 0, 0);
+        .contenedor-fluido{
+            img{
+                width: 3rem; 
+                margin-right: 1rem;
+            }
+            .contenedor-nav-header{
+                align-items: center;
+                text-align: center;
+                .texto-header {
+                    color: $color-verde-texto;
+                    &:hover{
+                        color: $color-verde-claro;
+                    }
                 }
             }
         }
+        
     }
     
 }
+
