@@ -194,6 +194,7 @@ footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul a {
 }
 .index-main .presentacion-index div .presentacion-index-texto p {
   font-size: 0.8rem;
+  text-align: center;
   animation: typing 5s steps(52) alternate infinite;
 }
 .index-main .nuestras-tecnologias {
