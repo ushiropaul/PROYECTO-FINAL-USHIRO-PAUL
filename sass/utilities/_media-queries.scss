@@ -59,9 +59,16 @@
 
 // MEDIA QUERY MOBILE PARA QUIENES-SOMOS.HTML
 @media screen and (max-width: 820px) {
-    .cards-equipo{
+    .contenedor-centrado-cards{
         display: flex;
-        flex-direction: column;
-        
+            justify-content: space-between;
+        .cards-equipo{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            .card-quipo{
+                max-width: 400px;
+            }
+        }
     }
 }

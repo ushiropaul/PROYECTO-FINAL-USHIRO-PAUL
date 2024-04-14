@@ -31,13 +31,13 @@ body {
   border-right: 4px solid;
 }
 
-.background, .main-comprar-servicios .contenedor-form, .main-servicios .foto-background-servicios, .index-main .nuestras-tecnologias .kali {
+.background, .main-servicios .foto-background-servicios, .main-comprar-servicios .contenedor-form, .index-main .nuestras-tecnologias .kali {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.background-equipo, main .quienes-somos .cards-equipo .Nollan, main .quienes-somos .cards-equipo .Kali-zen, main .quienes-somos .cards-equipo .Zartros, main .quienes-somos .cards-equipo .Ushza {
+.background-equipo, main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan, main .quienes-somos .contenedor-centrado-cards .cards-equipo .Kali-zen, main .quienes-somos .contenedor-centrado-cards .cards-equipo .Zartros, main .quienes-somos .contenedor-centrado-cards .cards-equipo .Ushza {
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,6 +193,7 @@ footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul a {
   font-size: 4rem;
 }
 .index-main .presentacion-index div .presentacion-index-texto p {
+  font-size: 0.8rem;
   animation: typing 5s steps(52) alternate infinite;
 }
 .index-main .nuestras-tecnologias {
@@ -383,80 +384,6 @@ footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul a {
   animation: typing 5s steps(51) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 
-.main-servicios .foto-background-servicios {
-  background-image: url(./../img/hacker-img.jpg);
-  width: 100%;
-  height: 30rem;
-}
-.main-servicios .foto-background-servicios div {
-  background-color: rgba(6, 92, 6, 0.123);
-  backdrop-filter: blur(3px);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: wrap;
-  flex-direction: center;
-}
-.main-servicios .foto-background-servicios div h1 {
-  font-size: 2rem;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.834);
-  font-weight: 800;
-}
-.main-servicios .foto-background-servicios div h1 .titulos-servicios {
-  font-family: "Kode Mono", monospace;
-  font-size: 2.3rem;
-}
-.main-servicios .div-franja-divisora {
-  background-color: black;
-  height: 4rem;
-  width: 100%;
-}
-.main-servicios .servicios {
-  padding-top: 2rem;
-  background-color: rgba(6, 92, 6, 0.123);
-  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/019/140/original/binary-code-digital-background-free-video.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: left;
-}
-.main-servicios .servicios article {
-  background-color: rgba(20, 17, 29, 0.996);
-  padding: 0.8rem;
-  border-radius: 1rem;
-  margin: 1rem;
-  max-width: 400px;
-  text-align: center;
-}
-.main-servicios .servicios article h2 {
-  font-size: 1.5rem;
-}
-.main-servicios .servicios article p {
-  color: #3ecb13;
-}
-.main-servicios .servicios article .contenedor-details {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-.main-servicios .servicios article .contenedor-details details {
-  background-color: rgba(6, 92, 6, 0.123);
-  padding: 0.5rem;
-  text-align: center;
-  border-radius: 1rem;
-  max-width: 400px;
-  margin-bottom: 0.3rem;
-}
-.main-servicios .servicios article .contenedor-details details summary {
-  color: rgb(71, 150, 252);
-}
-.main-servicios .servicios article .contenedor-details details p {
-  color: #00810b;
-}
-
 main .quienes-somos .equipo {
   padding-top: 2rem;
   padding-left: 1rem;
@@ -469,24 +396,29 @@ main .quienes-somos .equipo h1 {
 main .quienes-somos .equipo p {
   color: #3ecb13;
 }
-main .quienes-somos .cards-equipo {
+main .quienes-somos .contenedor-centrado-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .quienes-somos .contenedor-centrado-cards .cards-equipo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-template-rows: repeat(2, 550px);
   grid-template-areas: 0.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
 }
-main .quienes-somos .cards-equipo .card-equipo {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo {
   background-color: rgba(20, 17, 29, 0.641);
   border-radius: 2rem;
   position: relative;
   margin: 1.5rem;
 }
-main .quienes-somos .cards-equipo .card-equipo h4 {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo h4 {
   padding-top: 1rem;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo {
   border-radius: 2rem 0 0 2rem;
   padding: 1rem;
   display: flex;
@@ -497,46 +429,46 @@ main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo {
   background-color: rgba(20, 17, 29, 0.641);
   overflow: hidden;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo ul {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo ul li {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo ul li {
   font-size: 1rem;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo ul li span {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo ul li span {
   background-color: rgb(2, 44, 6);
   padding: 0.2rem;
   border-radius: 5px;
   color: #3ecb13;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo div {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo div {
   display: flex;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo div .contratar-hacker-btn {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo div .contratar-hacker-btn {
   background-color: rgb(32, 92, 212);
   padding: 0.5rem;
   border-radius: 1rem;
   color: #fff;
   font-family: "Source Code Pro", monospace;
 }
-main .quienes-somos .cards-equipo .card-equipo .habilidades-equipo div .contratar-hacker-btn:hover {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo div .contratar-hacker-btn:hover {
   transition: all 0.3s;
   color: #3ecb13;
   background-color: rgba(20, 17, 29, 0.996);
 }
-main .quienes-somos .cards-equipo .Ushza {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .Ushza {
   background-image: url(./../../img/Ushza.jpg);
 }
-main .quienes-somos .cards-equipo .Zartros {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .Zartros {
   background-image: url(./../img/Zartros.jpg);
 }
-main .quienes-somos .cards-equipo .Kali-zen {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .Kali-zen {
   background-image: url(./../img/kali-zen.jpg);
 }
-main .quienes-somos .cards-equipo .Nollan {
+main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   background-image: url(./../img/nollan.jpg);
 }
 
@@ -643,6 +575,80 @@ main .quienes-somos .cards-equipo .Nollan {
   border-radius: 3rem 0 3rem 0;
 }
 
+.main-servicios .foto-background-servicios {
+  background-image: url(./../img/hacker-img.jpg);
+  width: 100%;
+  height: 30rem;
+}
+.main-servicios .foto-background-servicios div {
+  background-color: rgba(6, 92, 6, 0.123);
+  backdrop-filter: blur(3px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: wrap;
+  flex-direction: center;
+}
+.main-servicios .foto-background-servicios div h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.834);
+  font-weight: 800;
+}
+.main-servicios .foto-background-servicios div h1 .titulos-servicios {
+  font-family: "Kode Mono", monospace;
+  font-size: 2.3rem;
+}
+.main-servicios .div-franja-divisora {
+  background-color: black;
+  height: 4rem;
+  width: 100%;
+}
+.main-servicios .servicios {
+  padding-top: 2rem;
+  background-color: rgba(6, 92, 6, 0.123);
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/019/140/original/binary-code-digital-background-free-video.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.main-servicios .servicios article {
+  background-color: rgba(20, 17, 29, 0.996);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  max-width: 400px;
+  text-align: center;
+}
+.main-servicios .servicios article h2 {
+  font-size: 1.5rem;
+}
+.main-servicios .servicios article p {
+  color: #3ecb13;
+}
+.main-servicios .servicios article .contenedor-details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.main-servicios .servicios article .contenedor-details details {
+  background-color: rgba(6, 92, 6, 0.123);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin-bottom: 0.3rem;
+}
+.main-servicios .servicios article .contenedor-details details summary {
+  color: rgb(71, 150, 252);
+}
+.main-servicios .servicios article .contenedor-details details p {
+  color: #00810b;
+}
+
 @media screen and (max-width: 980px) {
   .contenedor-fluido {
     position: relative;
@@ -692,9 +698,17 @@ main .quienes-somos .cards-equipo .Nollan {
   }
 }
 @media screen and (max-width: 820px) {
-  .cards-equipo {
+  .contenedor-centrado-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenedor-centrado-cards .cards-equipo {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+  }
+  .contenedor-centrado-cards .cards-equipo .card-quipo {
+    max-width: 400px;
   }
 }
 
