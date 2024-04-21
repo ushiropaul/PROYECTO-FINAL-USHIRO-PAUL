@@ -4,9 +4,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    .logo-footer{
+        img{
+            width: 100%;
+        }
+    }
     .contenedor-footer{
         padding-top: 5rem;
         text-align: center;
+        
         .contenedor-pages-footer{
             @include flex(center, space-evenly, row, wrap, center);
             gap: 3rem;

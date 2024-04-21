@@ -1,0 +1,24 @@
+.main-privacidad{
+    display: flex;
+    background-color: $color-verde-blur;
+    justify-content: center;
+    .contenedor-politicas{
+        margin-top: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        background-color: $color-negro-terminal;
+        max-width: 700px;
+        @include flex(center, center, column, wrap, left);
+        row-gap: 2rem;
+        .div-politicas{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(12, 10, 26);
+            padding: 2rem;
+            border-radius: 3rem 0 3rem 0;
+        }
+    }
+}

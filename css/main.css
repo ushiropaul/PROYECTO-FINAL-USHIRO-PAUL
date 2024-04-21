@@ -111,7 +111,9 @@ header .header {
 }
 header .header .contenedor-fluido img {
   width: 3rem;
-  margin-right: 1rem;
+}
+header .header .contenedor-fluido .boton-menu .menu-icon img {
+  width: 2rem;
 }
 header .header .contenedor-fluido .contenedor-nav-header {
   align-items: center;
@@ -129,6 +131,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+footer .logo-footer img {
+  width: 100%;
 }
 footer .contenedor-footer {
   padding-top: 5rem;
@@ -226,6 +231,9 @@ footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul a {
 }
 .index-main .nuestras-tecnologias .kali .kali-introduccion .kali-texto p {
   color: rgb(209, 207, 214);
+}
+.index-main .nuestras-tecnologias .kali .kali-introduccion .imagen-kali-lgo {
+  max-width: 400px;
 }
 .index-main .nuestras-tecnologias .ventajas-kali .presentacion-ventajas-kali {
   text-align: center;
@@ -385,6 +393,9 @@ footer .contenedor-footer .contenedor-pages-footer .pages-nav-footer ul a {
   animation: typing 5s steps(51) infinite, efectoBorde 0.5s step-end infinite alternate;
 }
 
+main .quienes-somos {
+  min-height: 800px;
+}
 main .quienes-somos .equipo {
   padding-top: 2rem;
   padding-left: 1rem;
@@ -404,8 +415,8 @@ main .quienes-somos .contenedor-centrado-cards {
 }
 main .quienes-somos .contenedor-centrado-cards .cards-equipo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-template-rows: repeat(2, 550px);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(450px));
   grid-template-areas: 0.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
@@ -420,15 +431,15 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo h4 {
   padding-top: 1rem;
 }
 main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo {
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 2rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-width: 250px;
   height: 100%;
   background-color: rgba(20, 17, 29, 0.641);
   overflow: hidden;
+  color: #3ecb13;
 }
 main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo ul {
   list-style: none;
@@ -443,7 +454,6 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habil
   background-color: rgb(2, 44, 6);
   padding: 0.2rem;
   border-radius: 5px;
-  color: #3ecb13;
 }
 main .quienes-somos .contenedor-centrado-cards .cards-equipo .card-equipo .habilidades-equipo div {
   display: flex;
@@ -492,8 +502,7 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   font-size: 2.4rem;
 }
 .main-comprar-servicios .contenedor-form {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
   background-image: url(https://cdn.create.vista.com/api/media/small/356467302/stock-photo-close-up-of-minified-javascript-file-computer-programming-source-code-for-html-website-development);
   display: flex;
   align-items: center;
@@ -506,12 +515,11 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+  padding: 2rem;
   column-gap: 2rem;
-  margin: 1rem;
   background-color: rgba(6, 92, 6, 0.123);
   box-shadow: 10px 10px 10px 10px black;
   backdrop-filter: blur(10px);
-  padding: 2rem;
   border-radius: 2rem 0 2rem 0;
 }
 .main-comprar-servicios .contenedor-form .form-encarga .row-form {
@@ -519,6 +527,7 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   flex-direction: column;
 }
 .main-comprar-servicios .contenedor-form .form-encarga .row-form div {
+  max-width: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -606,17 +615,26 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   width: 100%;
 }
 .main-servicios .servicios {
-  padding-top: 2rem;
   background-color: rgba(6, 92, 6, 0.123);
   background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/019/140/original/binary-code-digital-background-free-video.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.main-servicios .servicios .contenedor-blur-servicios {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   text-align: left;
+  background-color: rgba(6, 92, 6, 0.123);
+  backdrop-filter: blur(6px);
 }
-.main-servicios .servicios article {
+.main-servicios .servicios .contenedor-blur-servicios article {
   background-color: rgba(20, 17, 29, 0.996);
   padding: 0.8rem;
   border-radius: 1rem;
@@ -624,30 +642,37 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   max-width: 400px;
   text-align: center;
 }
-.main-servicios .servicios article h2 {
+.main-servicios .servicios .contenedor-blur-servicios article h2 {
   font-size: 1.5rem;
 }
-.main-servicios .servicios article p {
+.main-servicios .servicios .contenedor-blur-servicios article p {
   color: #3ecb13;
 }
-.main-servicios .servicios article .contenedor-details {
+.main-servicios .servicios .contenedor-blur-servicios article .contenedor-details {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
-.main-servicios .servicios article .contenedor-details details {
+.main-servicios .servicios .contenedor-blur-servicios article .contenedor-details details {
   background-color: rgba(6, 92, 6, 0.123);
   padding: 0.5rem;
+  position: relative;
   text-align: center;
   border-radius: 1rem;
   max-width: 400px;
   margin-bottom: 0.3rem;
 }
-.main-servicios .servicios article .contenedor-details details summary {
+.main-servicios .servicios .contenedor-blur-servicios article .contenedor-details details summary {
   color: rgb(71, 150, 252);
 }
-.main-servicios .servicios article .contenedor-details details p {
-  color: #00810b;
+.main-servicios .servicios .contenedor-blur-servicios article .contenedor-details details p {
+  color: #3ecb13;
+  position: absolute;
+  background-color: rgba(6, 92, 6, 0.123);
+  backdrop-filter: blur(25px);
+  border-radius: 0rem 0 1rem 1rem;
+  padding: 1rem;
+  z-index: 99999999;
 }
 
 @media screen and (max-width: 980px) {
@@ -685,8 +710,14 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   .contenedor-fluido .contenedor-nav-header .texto-header:hover {
     color: #3ecb13;
   }
+  footer .logo-footer {
+    text-align: center;
+  }
+  footer .logo-footer img {
+    max-width: 200px;
+  }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 980px) and (max-width: 820px) {
   .presentacion-index {
     display: flex;
     flex-direction: column-reverse;
@@ -697,8 +728,9 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
     flex-direction: column;
     gap: 2rem;
   }
-}
-@media screen and (max-width: 820px) {
+  .kali-introduccion img {
+    width: 300px;
+  }
   .contenedor-centrado-cards {
     display: flex;
     justify-content: space-between;
@@ -706,10 +738,16 @@ main .quienes-somos .contenedor-centrado-cards .cards-equipo .Nollan {
   .contenedor-centrado-cards .cards-equipo {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    width: 100%;
   }
   .contenedor-centrado-cards .cards-equipo .card-quipo {
-    max-width: 400px;
+    background-position: center;
+  }
+  .contenedor-centrado-cards .cards-equipo .card-quipo .habilidades-equipo {
+    border-radius: 2rem 0 0 2rem;
+    padding: 1rem;
+    height: 100%;
+    overflow: hidden;
   }
 }
 

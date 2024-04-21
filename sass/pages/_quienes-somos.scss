@@ -1,0 +1,102 @@
+
+main{
+
+    .quienes-somos{
+        min-height: 800px;
+        .equipo{
+            padding-top: 2rem;
+            padding-left: 1rem;
+            h1{
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 800;
+            }
+            p{
+                color: $color-verde-claro;
+            }
+        }
+        .contenedor-centrado-cards{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+            .cards-equipo{
+            
+                @include grid(repeat(auto-fit, minmax(350px, 1fr)), repeat(auto-fit, minmax(450px)), .5rem);
+                row-gap: 2rem;
+                column-gap: 2rem;
+                .card-equipo{
+                    background-color: $color-negro-terminal-transparente;
+                    border-radius: 2rem;
+                    position: relative;
+                    margin: 1.5rem;
+        
+                    h4{
+                        padding-top: 1rem;
+                    }
+                    .habilidades-equipo{
+                        border-radius: 2rem ;
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        // max-width: 250px;
+                        height: 100%;
+                        background-color: $color-negro-terminal-transparente;
+                        overflow: hidden;
+                        color: $color-verde-claro;
+                        ul{
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5rem;
+                            li{
+                                font-size: 1rem;
+                                span{
+                                    background-color: $color-verde-oscuro;
+                                    padding: .2rem;
+                                    border-radius: 5px;
+                                    // color: $color-verde-claro;
+                                }
+                            }
+                        }
+                        div{
+                            
+                            display: flex;
+                            
+                            .contratar-hacker-btn{
+                                background-color: $color-azul-titulo;
+                                padding: .5rem;
+                                border-radius: 1rem;
+                                color: #fff;
+                                font-family: "Source Code Pro", monospace;
+                                
+                                &:hover{
+                                    transition: all .3s;
+                                    color: $color-verde-claro;
+                                    background-color: $color-negro-terminal;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Ushza{
+                    background-image: url(./../../img/Ushza.jpg);
+                    @extend .background-equipo;
+                }
+                .Zartros{
+                    background-image: url(./../img/Zartros.jpg);
+                    @extend .background-equipo;
+                }
+                .Kali-zen{
+                    background-image: url(./../img/kali-zen.jpg);
+                    @extend .background-equipo;
+                }
+                .Nollan{
+                    background-image: url(./../img/nollan.jpg);
+                    @extend .background-equipo;
+                }
+            }
+        }
+    }
+}

@@ -47,7 +47,7 @@
                     @include flex(center, space-evenly, wrap);
                     height: 100%;
                     @include blur($color-verde-blur, blur(5px));
-
+                    
                     .kali-texto{
                         @include blur($color-negro-terminal-transparente, blur(5px));
                         padding: 2rem;
@@ -60,6 +60,10 @@
                         p{
                             color: rgb(209, 207, 214);
                         }
+                    }
+
+                    .imagen-kali-lgo{
+                        max-width: 400px;
                     }
                 }
             }

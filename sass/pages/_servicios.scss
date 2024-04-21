@@ -28,45 +28,55 @@
             width: 100%;
         }
         .servicios{
-            padding-top: 2rem;
             background-color: $color-verde-blur;
             background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/019/140/original/binary-code-digital-background-free-video.jpg);
-            // @extend .background;
-            @include flex(center, space-around, row, wrap, left);
-            article{
-                background-color: $color-negro-terminal;
-                padding: .8rem;
-                border-radius: 1rem;
-                margin: 1rem;
-                max-width: 400px;
-                text-align: center;
-                h2{
-                    font-size: 1.5rem;
-                }
-                
-                    p{
-                        color: $color-verde-claro;
-                    }
-                    .contenedor-details{
-                        display: flex;
-                        width: 100%;
-                        flex-direction: column;
-                        details{
-                            background-color: $color-verde-blur;
-                            padding: .5rem;
-                            
-                            text-align: center;
-                            border-radius: 1rem;
-                            max-width: 400px;
-                            margin-bottom: .3rem;
-                            summary{
-                                color: $color-azul-claro;
-                            }
+            @include flex(center, center, row, wrap, left);
+                .contenedor-blur-servicios{
+                    @include flex(center, space-around, row, wrap, left);
+                    background-color: $color-verde-blur;
+                    backdrop-filter: blur(6px);
+                    article{
+                        background-color: $color-negro-terminal;
+                        padding: .8rem;
+                        border-radius: 1rem;
+                        margin: 1rem;
+                        max-width: 400px;
+                        text-align: center;
+                        h2{
+                            font-size: 1.5rem;
+                        }
+                        
                             p{
-                                color: $color-verde-texto;
+                                color: $color-verde-claro;
+                            }
+                            .contenedor-details{
+                                display: flex;
+                                width: 100%;
+                                flex-direction: column;
+                                details{
+                                    background-color: $color-verde-blur;
+                                    padding: .5rem;
+                                    position: relative;
+                                    text-align: center;
+                                    border-radius: 1rem;
+                                    max-width: 400px;
+                                    margin-bottom: .3rem;
+                                    summary{
+                                        color: $color-azul-claro;
+                                        
+                                    }
+                                    p{
+                                        color: $color-verde-claro;
+                                        position: absolute;
+                                        background-color: $color-verde-blur;
+                                        backdrop-filter: blur(25px);
+                                        border-radius: 0rem 0 1rem 1rem;
+                                        padding: 1rem;
+                                        z-index: 99999999;
+                                    }
+                                }
                             }
                         }
-                    }
                 }
             }
     

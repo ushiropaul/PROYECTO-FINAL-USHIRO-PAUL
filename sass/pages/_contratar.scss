@@ -1,0 +1,76 @@
+.main-comprar-servicios{
+    background-color: $color-verde-blur;
+    .presentacion-servicios{
+        display: flex;
+        flex-direction: column;
+        min-height: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        .titulos-servicios{
+            font-family: "Kode Mono", monospace;
+            font-size: 2.4rem;
+        }
+    }
+    .contenedor-form{
+        padding: 3rem;
+        
+        background-image: url(https://cdn.create.vista.com/api/media/small/356467302/stock-photo-close-up-of-minified-javascript-file-computer-programming-source-code-for-html-website-development);
+        @extend .background;
+        @include flex(center, center);
+        
+        .form-encarga{
+            @include flex(left, center, row, wrap, center);
+            padding: 2rem;
+            column-gap: 2rem;
+            background-color: $color-verde-blur;
+            box-shadow: 10px 10px 10px 10px black;
+            backdrop-filter: blur(10px);
+            border-radius: 2rem 0 2rem 0;
+            .row-form{
+                display: flex;
+                flex-direction: column;
+                div{
+                    max-width: 300px;
+                    display: flex;
+                    flex-direction: column ;
+                    label{
+                        color: $color-verde-claro;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        padding-top: 1.5rem;
+                        padding-bottom: .5rem;
+                    }
+                    input{
+                        @extend .input-form;
+                    }
+                    select{
+                        @extend .input-form;
+                        option{
+                            color: #000;
+                        }
+                    }
+                    textarea{
+                        @extend .input-form;
+                        font-family:"Source Code Pro", monospace ;
+                        font-weight: normal;
+                        color: $color-verde-texto;
+                    }
+                    
+                }
+                .boton-enviar{
+                    margin-top: 1rem;
+                    @extend .input-form;
+                    &:hover{
+                        transition: all .3s;
+                        background-color: #000000;
+                        color: $color-verde-claro;
+                    }
+                }
+            }
+        }
+    }
+}
